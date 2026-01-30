@@ -1,0 +1,29 @@
+Key Findings and Model Insights
+
+
+​Feature Impact Analysis
+
+​Through the Exploratory Data Analysis (EDA) and model training, we can conclude the following about diabetes progression:
+
+​BMI (Body Mass Index): This showed one of the strongest positive correlations with the target variable. As BMI increases, the quantitative measure of diabetes progression tends to rise significantly. In our ANN, this feature likely received higher weight values.
+
+​S5 (Serum Triglycerides): This was another critical predictor. High levels of serum triglycerides are closely linked to increased disease progression.
+
+​Blood Pressure (BP): Similar to BMI, an upward trend in blood pressure correlates with higher progression values, highlighting the link between cardiovascular health and diabetes management.
+
+
+​Model Performance Summary
+​
+The Baseline Model: A simple architecture with one hidden layer provided a decent starting point but tended to either underfit or slightly overfit depending on the epoch count.
+
+​The Improved Model: By adding a Dropout layer, we effectively "regularized" the model. This prevented the neural network from becoming over-reliant on a single feature (like BMI) and forced it to learn a more holistic view of the patient's data.  
+
+​Activation Functions: The ReLU (Rectified Linear Unit) function was used for hidden layers to avoid the "vanishing gradient" problem, allowing the model to learn faster and more efficiently compared to older functions like Sigmoid.  
+
+​Business/Healthcare Application
+
+​For healthcare professionals, this model demonstrates that:
+
+​Preventive focus should be placed heavily on weight management (BMI) and lipid profiles (S5).
+​Predictive Accuracy: While the ANN is powerful, it requires high-quality, normalized data to provide reliable progression scores.
+​Treatment Planning: Insights from the model can help prioritize patients who are at a higher risk of rapid progression based on their current biochemical markers.
